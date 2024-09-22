@@ -76,6 +76,7 @@ body {
 
 .homeRight {
     width: 50%;
+    margin-top: -5%;
 }
 .projectShowcase {
     width: 100%;
@@ -109,6 +110,10 @@ body {
 
 .projectSelector {
     list-style: none;
+}
+.projectSelector a {
+    color: var(--font-color);
+    text-decoration: none;
 }
 .projectSelectorItem {
     line-height: 0em;
