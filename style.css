@@ -40,15 +40,15 @@ body {
     margin-top: 0.4rem;
     margin-left: 2em;
     height: 6rem;
-    color: rgb(124, 124, 124);
+    color: var(--font-color);
 }
 .navitem:hover {
     text-underline-offset: 0.5em;
     text-decoration: underline;
-    transition: 1s;
+    transition: 0.2s;
 }
 .active {
-    color: black;
+    color: #FFF2FF;
     text-underline-offset: 0.5em;
     text-decoration: underline;
 }
@@ -68,7 +68,6 @@ body {
     width: 50%;
 }
 .projectShowcase {
-    margin-top: 3em;
     width: 100%;
     transform: scale(0.7);
 }
