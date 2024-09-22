@@ -19,5 +19,7 @@ function tab(tab) {
 
 function projectShowcase(project) {
     var projects = ["Nook", "Titan", "Filler"]
-    console.log(projects[project])
+    var sources = ["/videos/video1.mp4", "/videos/video2.mp4", "/videos/video3.mp4"]
+    console.log(sources[project])
+    document.getElementById('projectVideo').src = sources[project]
 }
