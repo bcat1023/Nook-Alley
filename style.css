@@ -1,10 +1,15 @@
 :root {
-    --background-color: white;
-    --font-color: black;
+    --background-color: #581381;
+    --font-color: #F5A1E8;
+    --padding: 5em;
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Zen Dots", sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .navbar {
@@ -13,7 +18,7 @@ body {
 }
 
 .leftnav{
-    padding-left: 4em;
+    padding-left: var(--padding);
     width: 50%;
 }
 .logo {
@@ -21,7 +26,7 @@ body {
 }
 
 .rightnav {
-    padding-right: 4em;
+    padding-right: var(--padding);
     height: 6rem;
     width: 50%;
 }
@@ -35,21 +40,21 @@ body {
     margin-top: 0.4rem;
     margin-left: 2em;
     height: 6rem;
-    color: rgb(124, 124, 124);
+    color: var(--font-color);
 }
 .navitem:hover {
     text-underline-offset: 0.5em;
     text-decoration: underline;
-    transition: 1s;
+    transition: 0.2s;
 }
 .active {
-    color: black;
+    color: #FFF2FF;
     text-underline-offset: 0.5em;
     text-decoration: underline;
 }
 
 .home {
-    margin-left: 5em;
+    margin-left: var(--padding);
     margin-right: 3em;
     margin-top: 5%;
     display: flex;
@@ -63,7 +68,6 @@ body {
     width: 50%;
 }
 .projectShowcase {
-    margin-top: 3em;
     width: 100%;
     transform: scale(0.7);
 }
@@ -76,9 +80,20 @@ body {
 }
 .projectLeft {
     width: 50%;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+.projectLeft h1{
+    font-weight: inherit;
+    letter-spacing: inherit;
+}
+.projectLeft h3 {
+    font-weight: inherit;
+    letter-spacing: inhert;
 }
 .projectRight {
     width: 50%;
+    margin-top: -5%;
 }
 
 
