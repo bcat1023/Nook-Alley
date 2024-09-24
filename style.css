@@ -39,7 +39,7 @@ body {
     text-align: center;
     margin-top: 0.4rem;
     margin-left: 2em;
-    height: 6rem;
+    height: 2.2rem;
     color: var(--font-color);
 }
 .navitem:hover {
@@ -128,7 +128,50 @@ body {
     background-color: rgb(85, 85, 85);
     color: white;
 }
+
+@media screen and (max-width: 330px) {
+    :root {
+        --padding: 0em;
+    }
+}
+@media screen and (max-width: 430px) {
+    :root {
+        --padding: 1em;
+    }
+}
+@media screen and (max-width: 500px) {
+    :root {
+        --padding: 2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    :root {
+        --padding: 3em;
+    }
+}
+
 @media screen and (max-width: 864px) {
+    .navbar {
+        display: block;
+    }
+    .rightnav {
+        margin-left: calc(var(--padding) - 30px);
+        width: max-content;
+        height: auto;
+        position: relative;
+        padding-right: 0;
+        height: 6rem;
+        width: 50%;
+    }
+    .itemBar { 
+        width: max-content;
+        max-width: calc(200% - var(--padding));
+        height: auto;
+        overflow: auto;
+        direction: ltr;
+        text-align: left;
+        float: none;
+    }
     .home {
         display: block;
     }
@@ -136,18 +179,8 @@ body {
         width: 100%;
     }
     .homeRight {
-        width: 60%;
+        width: 100%;
     }
-    .navbar {
-        display: block;
-    }
-    .rightnav {
-        position: relative;
-        padding-right: 0;
-        padding-left: 9.5rem;
-        height: 6rem;
-        width: 50%;
-    }    
     .home {
         display: block;
     }
@@ -155,7 +188,7 @@ body {
         width: 100%;
     }
     .projectRight {
-        display: none;
+        width: 100%;
     }
     .projectSelector {
         margin-left: -4em;

@@ -1,5 +1,9 @@
 function tab(tab) {
-    var tabs = ["flex", "flex", "block", "block"]
+    if(window.innerWidth > '864px') {
+        var tabs = ["flex", "flex", "block", "block"]
+    } else {
+        var tabs = ["block", "block", "block", "block"]
+    }
 
     // everything after this point is fucked, rewrite this please... 
 
@@ -18,8 +22,11 @@ function tab(tab) {
 }
 
 function projectShowcase(project) {
-    var projects = ["Nook", "Titan", "Filler"]
     var sources = ["/videos/video1.mp4", "/videos/video2.mp4", "/videos/video3.mp4"]
-    console.log(sources[project])
-    document.getElementById('projectVideo').src = sources[project]
+    var path = document.getElementById('projectVideo').attributes.getNamedItem('src');
+    if(path.value == sources[project]) {
+        return;
+    } else {
+        path.value = sources[project]
+    }
 }
