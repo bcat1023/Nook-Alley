@@ -17,10 +17,11 @@ body {
     display: flex;
 }
 
-.leftnav{
+.leftnav {
     padding-left: var(--padding);
     width: 50%;
 }
+
 .logo {
     height: 3rem;
 }
@@ -30,11 +31,13 @@ body {
     height: 6rem;
     width: 50%;
 }
+
 .itemBar {
     display: flex;
     float: right;
     height: 0rem;
 }
+
 .navitem {
     text-align: center;
     margin-top: 0.4rem;
@@ -42,11 +45,13 @@ body {
     height: 2.2rem;
     color: var(--font-color);
 }
+
 .navitem:hover {
     text-underline-offset: 0.5em;
     text-decoration: underline;
     transition: 0.2s;
 }
+
 .active {
     color: #FFF2FF;
     text-underline-offset: 0.5em;
@@ -59,16 +64,35 @@ body {
     margin-top: 5%;
     display: flex;
 }
+
 .homeLeft {
     width: 50%;
     margin-right: 5%;
 }
+
+.badge {
+    position: relative;
+    height: 4em;
+    margin-left: 1em;
+    border-radius: 13px;
+    transition: 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.badge:hover {
+    transform: translateX(5em)scale(5);
+    box-shadow: 0px 0px 30px -4px;
+    background: rgb(18 81 126);
+    transition: 0.2s;
+    z-index: 99;
+}
+
 
 .gitRef {
     color: var(--font-color);
     text-decoration: none;
     transition: .5s;
 }
+
 .gitRef:hover {
     color: #FFF2FF;
     transition: .2s;
@@ -78,6 +102,7 @@ body {
     width: 50%;
     margin-top: -5%;
 }
+
 .projectShowcase {
     width: 100%;
     transform: scale(0.7);
@@ -89,19 +114,23 @@ body {
     margin-top: 5%;
     display: none;
 }
+
 .projectLeft {
     width: 50%;
     font-weight: 400;
     letter-spacing: 0.8px;
 }
-.projectLeft h1{
+
+.projectLeft h1 {
     font-weight: inherit;
     letter-spacing: inherit;
 }
+
 .projectLeft h3 {
     font-weight: inherit;
     letter-spacing: inhert;
 }
+
 .projectRight {
     width: 50%;
     margin-top: -5%;
@@ -111,19 +140,23 @@ body {
 .projectSelector {
     list-style: none;
 }
+
 .projectSelector a {
     color: var(--font-color);
     text-decoration: none;
 }
+
 .projectSelectorItem {
     line-height: 0em;
     text-indent: 1em;
     border: 1px rgb(85, 85, 85) solid;
     transition: 0.2s;
 }
+
 .projectSelectorItem:hover {
     transform: scale(1.1);
 }
+
 .projectSelectorItem:active {
     background-color: rgb(85, 85, 85);
     color: white;
@@ -134,16 +167,19 @@ body {
         --padding: 0em;
     }
 }
+
 @media screen and (max-width: 430px) {
     :root {
         --padding: 1em;
     }
 }
+
 @media screen and (max-width: 500px) {
     :root {
         --padding: 2em;
     }
 }
+
 @media screen and (max-width: 600px) {
     :root {
         --padding: 3em;
@@ -154,6 +190,7 @@ body {
     .navbar {
         display: block;
     }
+
     .rightnav {
         margin-left: calc(var(--padding) - 30px);
         width: max-content;
@@ -163,7 +200,8 @@ body {
         height: 6rem;
         width: 50%;
     }
-    .itemBar { 
+
+    .itemBar {
         width: max-content;
         max-width: calc(200% - var(--padding));
         height: auto;
@@ -172,27 +210,35 @@ body {
         text-align: left;
         float: none;
     }
+
     .home {
         display: block;
     }
+
     .homeLeft {
         width: 100%;
     }
+
     .homeRight {
         width: 100%;
     }
+
     .home {
         display: block;
     }
+
     .projectLeft {
         width: 100%;
     }
+
     .projectRight {
         width: 100%;
     }
+
     .projectSelector {
         margin-left: -4em;
     }
+
     .projectSelectorItem {
         width: 100%;
     }
