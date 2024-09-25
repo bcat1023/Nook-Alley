@@ -1,8 +1,10 @@
 function tab(tab) {
-    if(window.innerWidth > '864px') {
+    if(window.innerWidth > '864') {
         var tabs = ["flex", "flex", "block", "block"]
+        console.log('false, non mobile')
     } else {
         var tabs = ["block", "block", "block", "block"]
+        console.log('true, mobile')
     }
 
     // everything after this point is fucked, rewrite this please... 
