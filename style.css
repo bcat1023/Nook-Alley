@@ -70,22 +70,51 @@ body {
     margin-right: 5%;
 }
 
-.badge {
+.carbontext {
     position: relative;
-    height: 4em;
-    margin-left: 1em;
-    border-radius: 13px;
-    transition: 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    display: inline-block;
+    border-bottom: 1px dotted #37a34d;
 }
 
-.badge:hover {
-    transform: translateX(5em)scale(5);
-    box-shadow: 0px 0px 30px -4px;
-    background: rgb(18 81 126);
-    transition: 0.2s;
-    z-index: 99;
+.carbontext .carbonbadge {
+    visibility: hidden;
+    background-color: #37a34d;
+    width: 15em;
+    height: 0em;
+    transition: 0.6s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 56px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
 }
 
+.carbontext .carbonbadge::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #37a34d transparent transparent transparent;
+}
+
+.carbontext:hover .carbonbadge {
+    visibility: visible;
+    height: 15em;
+    transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    overflow: hidden;
+}
+
+.badge {
+    height: 15em;
+}
 
 .gitRef {
     color: var(--font-color);
@@ -115,6 +144,7 @@ body {
     margin-top: 5%;
     display: none;
 }
+
 
 .projectLeft {
     width: 50%;
@@ -161,6 +191,60 @@ body {
 .projectSelectorItem:active {
     background-color: rgb(85, 85, 85);
     color: white;
+}
+
+.about {
+    display: none;
+    margin-left: var(--padding);
+    margin-right: 3em;
+    margin-top: 5%;
+}
+.aboutLeft {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.aboutRight {
+    width: 50%;
+    margin-top: -5%;
+}
+
+.contact {
+    display: none;
+    margin-left: var(--padding);
+    margin-right: 3em;
+    margin-top: 5%;
+    display: none;
+    color: white;
+}
+.contactLeft {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.contactRight {
+    width: 50%;
+    margin-top: 3%;
+}
+
+.contactForm {
+    line-height: 0;
+}
+
+.contact input {
+    width: 80%;
+    padding: 3%;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    width: 80%;
+    padding: 3%;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 330px) {
@@ -222,10 +306,6 @@ body {
 
     .homeRight {
         width: 100%;
-    }
-
-    .home {
-        display: block;
     }
 
     .projectLeft {

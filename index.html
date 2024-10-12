@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <!-- NOTE: TO-DO, Add Aria-label's, finish CSP -->
+
 <head>
     <title>Alt Root Render 1 | In progress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,37 +19,37 @@
 <body>
     <div class="navbar">
         <div class="leftnav">
-                <a href="/">
+            <a href="/">
                 <?xml version="1.0" encoding="UTF-8"?>
-                <svg class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 1497.33 317.12">
+                <svg class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1497.33 317.12">
                     <defs>
                         <style>
                             .cls-1 {
                                 fill: #f5a1e8;
                             }
-    
+
                             .cls-2 {
                                 fill: none;
                             }
-    
+
                             .cls-3 {
                                 clip-path: url(#clippath-1);
                             }
-    
+
                             .cls-4 {
                                 clip-path: url(#clippath-3);
                             }
-    
+
                             .cls-5 {
                                 fill: #fff2ff;
                                 fill-rule: evenodd;
                             }
-    
+
                             .cls-6 {
                                 clip-path: url(#clippath-2);
                             }
-    
+
                             .cls-7 {
                                 clip-path: url(#clippath);
                             }
@@ -107,7 +108,7 @@
                     <path class="cls-5" d="M45.56,58.06l-9.55,9.77,9.88-9.55c-.11-.07-.22-.14-.33-.21" />
                 </svg>
             </a>
-            </div>
+        </div>
         <div class="rightnav">
             <div class="itemBar">
                 <div onclick="tab(0)" id="nav0" class="navitem active">Home</div>
@@ -133,13 +134,19 @@
             </div>
             <div>
                 <span>
-                    <a class="gitRef" href="//github.com/bcat1023"><p><i class="fa-brands fa-github"></i> Github</p></a>
-                    <img class="badge" src="/images/webpagetest-carbon-control-badge-monitored.png" alt="">
+                    <a class="gitRef" href="//github.com/bcat1023">
+                        <p><i class="fa-brands fa-github"></i> Github</p>
+                    </a>
+                    <div class="carbontext">Carbon Control monitored by Catchpoint
+                        <span class="carbonbadge"><img class="badge"
+                                src="/images/webpagetest-carbon-control-badge-monitored.png" alt=""></span>
+                    </div>
                 </span>
             </div>
         </div>
         <div class="homeRight">
-            <video src="/videos/iMac 24_ - Silver.mp4" loading="lazy" muted autoplay loop class="projectShowcase" alt="">
+            <video src="/videos/iMac 24_ - Silver.mp4" loading="lazy" muted autoplay loop class="projectShowcase"
+                alt="">
         </div>
     </div>
 
@@ -175,7 +182,61 @@
             </div>
         </div>
         <div class="projectRight">
-            <video autoplay muted loop src="images/iMac 24_ - Silver.png" class="projectShowcase" id="projectVideo"></video>
+            <video autoplay muted loop src="images/iMac 24_ - Silver.png" class="projectShowcase"
+                id="projectVideo"></video>
+        </div>
+    </div>
+
+    <!-- About tab-->
+    <div id="2" class="about">
+        <div class="aboutLeft">
+            <div>
+                <h1>Nook Alley</h1>
+                <h3>Web Dev</h3>
+            </div>
+            <div>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum pellentesque sit convallis mi interdum
+                    amet
+                    placerat. Pharetra molestie tempus pretium ante mi rhoncus ac.</p>
+            </div>
+            <div>
+                <span>
+                    <a class="gitRef" href="//github.com/bcat1023">
+                        <p><i class="fa-brands fa-github" aria-hidden="true"></i> Github</p>
+                    </a>
+                    <div class="carbontext">Carbon Control monitored by Catchpoint
+                        <span class="carbonbadge"><img class="badge"
+                                src="/images/webpagetest-carbon-control-badge-monitored.png" alt=""></span>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="aboutRight">
+            <video src="/videos/iMac 24_ - Silver.mp4" loading="lazy" muted="" autoplay="" loop=""
+                class="projectShowcase" alt="">
+            </video>
+        </div>
+    </div>
+
+    <!-- Contact tab-->
+    <div id="3" class="contact">
+        <div class="contactLeft">
+            <div>
+                <h1>Need to contact me?</h1>
+                <h3>Use the form</h3>
+            </div>
+            <div>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum pellentesque sit convallis mi interdum
+                    amet
+                    placerat. Pharetra molestie tempus pretium ante mi rhoncus ac.</p>
+            </div>
+        </div>
+        <div class="contactRight">
+            <form class="contactForm" action="">
+                <p>Email:</p><input type="email" placeholder="contactme@email.com" name="" id="">
+                <p>Subject:</p><input type="text" placeholder="Lorem ipsum." name="" id="">
+                <p>Message:</p><textarea name="" placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit." id=""></textarea>
+            </form>
         </div>
     </div>
 
