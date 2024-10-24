@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
 }
 
@@ -129,7 +129,7 @@ body {
 
 .homeRight {
     width: 50%;
-    margin-top: -5%;
+    margin-top: -9%;
 }
 
 .projectShowcase {
