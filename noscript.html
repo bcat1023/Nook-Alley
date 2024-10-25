@@ -5,8 +5,7 @@
 <head>
     <title>Alt Root Render 1 | In progress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="/app.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://kit.fontawesome.com/f5b6b4399c.js">
     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,14 +109,7 @@
                 </svg>
             </a>
         </div>
-        <div class="rightnav">
-            <div class="itemBar">
-                <div onclick="tab(0)" id="nav0" class="navitem active">Home</div>
-                <div onclick="tab(1)" id="nav1" class="navitem">Projects</div>
-                <div onclick="tab(2)" id="nav2" class="navitem">About</div>
-                <div onclick="tab(3)" id="nav3" class="navitem">Contact</div>
-            </div>
-        </div>
+        
     </div>
 
     <!-- Tabs start here-->
@@ -125,122 +117,19 @@
     <div id="0" class="home">
         <div class="homeLeft">
             <div>
-                <noscript>
-                    <meta http-equiv="refresh" content="0; url=/noscript.html">
-                  </noscript>
-                <h1>Nook Alley</h1>
-                <h3>Web Dev</h3>
+                <h1>Scripting Error</h1>
+                <h3>Javascript is disabled</h3>
             </div>
             <div>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum pellentesque sit convallis mi interdum
-                    amet
-                    placerat. Pharetra molestie tempus pretium ante mi rhoncus ac.</p>
+                <p>Please enable javascript in the site permissions.</p>
             </div>
             <div>
                 <span>
-                    <a class="gitRef" href="//github.com/bcat1023">
-                        <p><i class="fa-brands fa-github"></i> Github</p>
+                    <a class="gitRef" href="/">
+                        <p><i class="fa-solid fa-house"></i> Home</p>
                     </a>
-                    <div class="carbontext">Carbon Control monitored by Catchpoint
-                        <span class="carbonbadge"><img class="badge"
-                                src="/images/webpagetest-carbon-control-badge-monitored.png" loading="lazy" alt=""></span>
-                    </div>
                 </span>
             </div>
-        </div>
-        <div class="homeRight">
-            <video src="/videos/home.mp4" loading="lazy" muted autoplay loop class="projectShowcase"
-                alt="">
-        </div>
-    </div>
-
-    <!-- Projects tab-->
-    <div id="1" class="projects">
-        <div class="projectLeft">
-            <div>
-                <h1>Projects</h1>
-            </div>
-            <div>
-                <ul class="projectSelector">
-                    <a href="#there-is-no-way-you-fell-for-that">
-                        <li onmouseover="projectShowcase(0)" class="projectSelectorItem">
-                            <h3>Secret Message</h3>
-                            <p>Decode the message</p>
-                        </li>
-                    </a>
-                    <br>
-                    <a href="//games.thedrowsy.com">
-                        <li onmouseover="projectShowcase(1)" class="projectSelectorItem">
-                            <h3>Titan Network</h3>
-                            <p>Your looking at it</p>
-                        </li>
-                    </a>
-                    <br>
-                    <a href="#filler">
-                        <li onmouseover="projectShowcase(2)" class="projectSelectorItem">
-                            <h3>Cisco VEN401-AT</h3>
-                            <p>Hacking the VEN401</p>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-        <div class="projectRight">
-            <video autoplay playsinline muted loop src="videos/video0.mp4" class="projectShowcase"
-                id="projectVideo"></video>
-        </div>
-    </div>
-
-    <!-- About tab-->
-    <div id="2" class="about">
-        <div class="aboutLeft">
-            <div>
-                <h1>Nook Alley</h1>
-                <h3>Web Dev</h3>
-            </div>
-            <div>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum pellentesque sit convallis mi interdum
-                    amet
-                    placerat. Pharetra molestie tempus pretium ante mi rhoncus ac.</p>
-            </div>
-            <div>
-                <span>
-                    <a class="gitRef" href="//github.com/bcat1023">
-                        <p><i class="fa-brands fa-github" aria-hidden="true"></i> Github</p>
-                    </a>
-                    <div class="carbontext">Carbon Control monitored by Catchpoint
-                        <span class="carbonbadge"><img class="badge"
-                                src="/images/webpagetest-carbon-control-badge-monitored.png" alt=""></span>
-                    </div>
-                </span>
-            </div>
-        </div>
-        <div class="aboutRight">
-            <video src="/videos/iMac 24_ - Silver.mp4" loading="lazy" muted="" autoplay="" loop=""
-                class="projectShowcase" alt="">
-            </video>
-        </div>
-    </div>
-
-    <!-- Contact tab-->
-    <div id="3" class="contact">
-        <div class="contactLeft">
-            <div>
-                <h1>Need to contact me?</h1>
-                <!--<h3>Try the form, or email me.</h3>-->
-            </div>
-            <div>
-                <p>If you need to reach out, you can use the contact form to contact me.</p>
-            </div>
-        </div>
-        <div class="contactRight">
-            <form class="contactForm" action="/pages/success" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netilfy="true">
-                <p>Email:</p><input type="email" placeholder="contactme@email.com" name="" id="">
-                <p>Subject:</p><input type="text" placeholder="Lorem ipsum." name="" id="">
-                <p>Message:</p><textarea name="" placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit." id=""></textarea>
-                <button class="special"><div data-netlify-recaptcha="true"></div></button>
-                <button type="submit">Send</button>
-            </form>
         </div>
     </div>
 
