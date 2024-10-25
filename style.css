@@ -351,4 +351,21 @@ body {
     .projectSelectorItem {
         width: 100%;
     }
+
+
+    .aboutLeft {
+        width: 100%;
+    }
+
+    .aboutRight {
+        width: 100%;
+    }
+
+    .contactLeft {
+        width: 100%;
+    }
+
+    .contactRight {
+        width: 100%;
+    }
 }
