@@ -228,6 +228,10 @@ body {
     margin-top: 3%;
 }
 
+.minibar {
+    display: flex;
+}
+
 .contactForm {
     line-height: 0;
 }
@@ -260,6 +264,7 @@ body {
     border-radius: 2px;
     transition: 0.3s cubic-bezier(0.82, 0.26, 0.93, 1.68);
     margin-top: 13px;
+    z-index: 2147483649;
 }
 
 .contact button:hover {
