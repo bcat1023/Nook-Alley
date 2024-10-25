@@ -342,6 +342,7 @@ body {
     .projectRight {
         width: 100%;
         margin-left: -1em;
+        transform: scale(1.5);
     }
 
     .projectSelector {
