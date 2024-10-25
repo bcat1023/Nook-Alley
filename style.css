@@ -238,11 +238,11 @@ body {
     border-radius: 2px;
 }
 
-.special button {
-    width: auto;
-    padding: 0%;
+.special {
+    width: auto !important;
+    padding: 0% !important;
     background-color: transparent;
-    border: none;
+    border: none ip !important;
     transition: 0.3s cubic-bezier(0.82, 0.26, 0.93, 1.68);
     margin-top: 13px;
 }
