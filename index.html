@@ -223,7 +223,7 @@
         <div class="contactLeft">
             <div>
                 <h1>Need to contact me?</h1>
-                <h3>Use the form</h3>
+                <h3>Try the form, or email me.</h3>
             </div>
             <div>
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum pellentesque sit convallis mi interdum
@@ -232,10 +232,11 @@
             </div>
         </div>
         <div class="contactRight">
-            <form class="contactForm" action="">
+            <form class="contactForm" action="/pages/success" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netilfy="true">
                 <p>Email:</p><input type="email" placeholder="contactme@email.com" name="" id="">
                 <p>Subject:</p><input type="text" placeholder="Lorem ipsum." name="" id="">
                 <p>Message:</p><textarea name="" placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit." id=""></textarea>
+                <button><div data-netlify-recaptcha="true"></div></button>
                 <button type="submit">Send</button>
             </form>
         </div>
