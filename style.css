@@ -164,7 +164,7 @@ body {
 
 .projectRight {
     width: 50%;
-    margin-top: -5%;
+    margin-top: -8%;
 }
 
 
@@ -215,7 +215,6 @@ body {
     margin-right: 3em;
     margin-top: 5%;
     display: none;
-    color: white;
 }
 .contactLeft {
     width: 50%;
@@ -236,7 +235,25 @@ body {
     padding: 3%;
     background-color: transparent;
     border: 2px white solid;
-    border-radius: 5px;
+    border-radius: 2px;
+}
+
+.contact button {
+    width: 30%;
+    padding: 3%;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 2px white solid;
+    border-radius: 2px;
+    transition: 0.3s cubic-bezier(0.82, 0.26, 0.93, 1.68);
+    margin-top: 13px;
+}
+
+.contact button:hover {
+    box-shadow: 6px 6px 0px 0px green;
+    border-radius: 0px;
+    transform: translateX(-6px)translateY(-6px);
+    color: var(--font-color);
 }
 
 .contact textarea {
@@ -244,7 +261,7 @@ body {
     padding: 3%;
     background-color: transparent;
     border: 2px white solid;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 330px) {
@@ -314,6 +331,7 @@ body {
 
     .projectRight {
         width: 100%;
+        margin-left: -1em;
     }
 
     .projectSelector {

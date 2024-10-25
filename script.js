@@ -1,5 +1,5 @@
 function tab(tab) {
-    if(window.innerWidth > '864') {
+    if(window.innerWidth > '604') {
         var tabs = ["flex", "flex", "flex", "flex"]
         // desktop
     } else {
