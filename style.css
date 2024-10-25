@@ -238,6 +238,16 @@ body {
     border-radius: 2px;
 }
 
+.special button {
+    width: auto;
+    padding: 0%;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s cubic-bezier(0.82, 0.26, 0.93, 1.68);
+    margin-top: 13px;
+}
+
+
 .contact button {
     width: 30%;
     padding: 3%;
