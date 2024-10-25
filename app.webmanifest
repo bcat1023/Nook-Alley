@@ -3,14 +3,9 @@
     "short_name": "NkAlley",
     "icons": [
         {
-          "src": "/favicon.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        },
-        {
             "src": "/favicon.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "128x128"
           }
     ],
     "start_url": "/",
