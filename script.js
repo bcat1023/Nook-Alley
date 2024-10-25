@@ -1,3 +1,6 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("/serviceworker.js");
+ }
 function tab(tab) {
     if(window.innerWidth > '604') {
         var tabs = ["flex", "flex", "flex", "flex"]

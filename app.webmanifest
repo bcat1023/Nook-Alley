@@ -1,0 +1,15 @@
+{
+    "name": "Nook Alley",
+    "short_name": "NkAlley",
+    "icons": [
+        {
+          "src": "/favicon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#09121B",
+    "background_color": "#09121B"
+}
