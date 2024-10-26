@@ -70,6 +70,12 @@ body {
     margin-right: 5%;
 }
 
+.homeShowcase {
+    width: 100%;
+    transform: scale(1);
+    margin-top: 2em;
+}
+
 .carbontext {
     position: relative;
     display: inline-block;
@@ -129,11 +135,12 @@ body {
 
 .homeRight {
     width: 50%;
-    margin-top: -9%;
+    margin-top: -8%;
 }
 
 .projectShowcase {
     width: 100%;
+    transform: scale(0.7);
     margin-top: 2em;
 }
 
@@ -345,6 +352,12 @@ body {
         margin-top: 0em;
     }
 
+    .projectShowcase {
+        width: 100%;
+        transform: scale(1);
+        margin-top: 2em;
+    }
+
     .projectLeft {
         width: 100%;
     }
@@ -353,6 +366,12 @@ body {
         margin-left: -3em;
         margin-top: 2em;
         width: 130%;
+    }
+
+    .projectShowcase {
+        width: 100%;
+        transform: scale(1);
+        margin-top: 2em;
     }
 
     .projectSelector {
