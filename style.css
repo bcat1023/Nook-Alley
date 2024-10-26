@@ -134,7 +134,6 @@ body {
 
 .projectShowcase {
     width: 100%;
-    transform: scale(0.7);
     margin-top: 2em;
 }
 
@@ -163,8 +162,8 @@ body {
 }
 
 .projectRight {
-    width: 50%;
     margin-top: -8%;
+    width: 50%;
 }
 
 
@@ -323,6 +322,7 @@ body {
     }
 
     .itemBar {
+        mask-image: linear-gradient(to right, transparent 0%, black 48px, black calc(100% - 48px), transparent 100%);
         width: max-content;
         max-width: calc(200% - var(--padding));
         height: auto;
@@ -342,6 +342,7 @@ body {
 
     .homeRight {
         width: 100%;
+        margin-top: 0em;
     }
 
     .projectLeft {
@@ -349,9 +350,9 @@ body {
     }
 
     .projectRight {
-        width: 100%;
-        margin-left: -1em;
-        transform: scale(1.5);
+        margin-left: -3em;
+        margin-top: 2em;
+        width: 130%;
     }
 
     .projectSelector {
