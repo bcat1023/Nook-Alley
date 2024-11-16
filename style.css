@@ -190,6 +190,24 @@ body {
     transition: 0.2s;
 }
 
+.projectRollup {
+    margin-left: 1em;
+    text-indent: 0;
+    padding-bottom: 1em;
+    max-height: 0px;
+    display: none;
+    transition: max-height 5s ease-in;
+}
+
+.activeRoller {
+    max-height: 100%;
+    display: block;
+}
+
+.projectRollup button {
+    border-radius: 0;
+}
+
 .projectSelectorItem:hover {
     transform: scale(1.1);
 }
@@ -244,11 +262,12 @@ body {
 
 .contact input {
     width: 80%;
-    padding: 3%;
+    padding: 4%;
     background-color: transparent;
     border: 2px white solid;
     color: white;
-    border-radius: 2px;
+    border-radius: 35px;
+    margin-left: -1em;
 }
 
 .special {
@@ -261,7 +280,7 @@ body {
 }
 
 
-.contact button {
+button {
     width: 30%;
     padding: 3%;
     background-color: transparent;
@@ -273,7 +292,7 @@ body {
     z-index: 2147483649;
 }
 
-.contact button:hover {
+button:hover {
     box-shadow: 6px 6px 0px 0px green;
     border-radius: 0px;
     transform: translateX(-6px)translateY(-6px);
@@ -282,11 +301,14 @@ body {
 
 .contact textarea {
     width: 80%;
-    padding: 3%;
+    padding: 4%;
     background-color: transparent;
     border: 2px white solid;
     color: white;
-    border-radius: 2px;
+    border-radius: 35px;
+    margin-left: -1em;
+    max-width: 80%;
+    min-width: 80%;
 }
 
 @media screen and (max-width: 330px) {
@@ -363,9 +385,8 @@ body {
     }
 
     .projectRight {
-        margin-left: -3em;
         margin-top: 2em;
-        width: 130%;
+        width: 100%;
     }
 
     .projectShowcase {
