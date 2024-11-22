@@ -121,7 +121,7 @@
                 <h3>Page not found</h3>
             </div>
             <div>
-                <p>The page your looking does exist on our servers.</p>
+                <p id="funny"></p>
             </div>
             <div>
                 <span>
@@ -132,7 +132,16 @@
             </div>
         </div>
     </div>
-
+    <script>
+        var funny = document.getElementById('funny')
+        var jokes = ["The 404 error walked into a bar, but the bar had already disappeared. It’s like time had never existed. Or the bar. Or the 404.", "I tried to visit a webpage, but all I got was a 404 error. Suddenly, I was in a room with infinite doors, none of which opened.", "The 404 error stared back at me from the screen. Then, I blinked, and the error was gone. I wasn’t sure if it had ever been there at all.", "I got a 404 error and entered a parallel universe where 404 errors don’t exist. Everything was perfect… except for the silence. Oh, the silence.", "I tried to find the webpage, but the 404 error turned into a black hole. The URL was devoured, leaving only the echo of forgotten data.", "I received a 404 error and found myself standing on the edge of an infinite cliff. Every direction led nowhere. There was nothing to look for, yet everything to find."]
+        var max = jokes.length;
+        function getRandomInt(x) {
+          return Math.floor(Math.random() * x);
+        }
+        var choice = getRandomInt(max)
+        funny.innerText = jokes[choice]
+      </script>   
     <script src="script.js" defer></script>
 </body>
 

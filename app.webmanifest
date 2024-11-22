@@ -10,6 +10,7 @@
     ],
     "start_url": "/",
     "display": "standalone",
+    "description": "Nook Alley",
     "theme_color": "#09121B",
     "background_color": "#09121B"
 }
