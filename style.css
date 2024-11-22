@@ -254,6 +254,7 @@ body {
 
 .minibar {
     display: flex;
+    margin-left: -1em;
 }
 
 .contactForm {
@@ -262,11 +263,10 @@ body {
 
 .contact input {
     width: 80%;
-    padding: 4%;
+    padding: 3%;
     background-color: transparent;
     border: 2px white solid;
     color: white;
-    border-radius: 35px;
     margin-left: -1em;
 }
 
@@ -301,11 +301,10 @@ button:hover {
 
 .contact textarea {
     width: 80%;
-    padding: 4%;
+    padding: 3%;
     background-color: transparent;
     border: 2px white solid;
     color: white;
-    border-radius: 35px;
     margin-left: -1em;
     max-width: 80%;
     min-width: 80%;
