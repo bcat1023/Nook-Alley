@@ -204,6 +204,11 @@ body {
     display: block;
 }
 
+.projectRollupText {
+    line-height: normal;
+    margin-right: 1em;
+}
+
 .projectRollup button {
     border-radius: 0;
 }
