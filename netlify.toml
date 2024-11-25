@@ -6,9 +6,11 @@
 [[redirects]]
     from = "/modern/NOOK_ALLEY.webm"
     to = "/videos/legacy/NOOK_ALLEY.webm"
-    status = 301
+    status = 200
+    force = true
 
 [[redirects]]
     from = "/modern/NOOK_ALLEY.mp4"
     to = "/videos/legacy/NOOK_ALLEY.mp4"
-    status = 301
+    status = 200
+    force = true
