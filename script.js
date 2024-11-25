@@ -74,7 +74,7 @@ function tab(tabX, resize) {
 
 
 function projectShowcase(project) {
-    var sources = ["/videos/video1.mp4", "/videos/video2.mp4", "/videos/video3.mp4"]
+    var sources = ["/videos/video1.mp4", "/videos/video2.mp4", "/videos/video3.mp4", "/videos/video1.mp4"]
     var path = document.getElementById('projectVideo').attributes.getNamedItem('src');
     var roller = document.getElementById(`roller${project}`);
     var activeRoller = document.getElementsByClassName('activeRoller')
