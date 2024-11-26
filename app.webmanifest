@@ -1,16 +1,21 @@
 {
-    "name": "Nook Alley",
     "short_name": "NkAlley",
+    "name": "Nook Alley",
     "icons": [
         {
             "src": "/favicon.png",
+            "sizes": "264x264",
             "type": "image/png",
-            "sizes": "128x128"
-          }
+            "purpose": "maskable"
+        },
+        {
+            "src": "/favicon.png",
+            "sizes": "264x264",
+            "type": "image/png"
+        }
     ],
     "start_url": "/",
     "display": "standalone",
-    "description": "Nook Alley",
     "theme_color": "#09121B",
     "background_color": "#09121B"
 }
