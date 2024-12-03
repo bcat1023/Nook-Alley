@@ -207,6 +207,11 @@ body {
 .projectRollupText {
     line-height: normal;
     margin-right: 1em;
+    font-weight: 100 !important;
+}
+
+.projectRollupText h4 {
+    font-weight: 100 !important;
 }
 
 .projectRollup button {
