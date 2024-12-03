@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Nook Alley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "Open Sans", serif;
+        background-color: black;
+        text-align: center;
+        margin: 0;
+        
+    }
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+    }
+
+    video::-webkit-media-controls-panel {
+        display: none !important;
+        opacity: 1 !important;
+    }
+
+    video::-webkit-media-controls-start-playback-button {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        
+        position: fixed;
+        text-shadow: 0 0 20px white;
+        color: white;
+        transition: 2s;
+        margin-top: 20vh;
+        height: 50vh;
+        width: 100vw;
+        opacity: 0;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .goodbye {
+        color: white;
+        text-decoration: underline;
+        pointer-events: all;
+        z-index: 9999999;
+    }
+
+    .playContainer {
+        background-color: darkgrey;
+        display: none;
+        position: fixed;
+        height: 100vh;
+        text-align: left;
+        color: white;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        max-width: 100vw;
+    }
+    .textContainer {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .play {
+        text-decoration: underline;
+        text-align: left;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="x" class="playContainer">
+        <div class="textContainer">
+            <h1>Your experience is paused</h1>
+        <h2>Your browser paused this page, is your low power mode on?</h2>
+        <h2 class="play" id="playButton" onclick="playVideo()">Unpause</h2>
+        </div>
+    </div>
+    <video id="1" class="cover" muted playsinline autoplay loop disablepictureinpicture >
+        <source src="/modern/loading.webm">
+        <source src="/fallback/loading.mp4">
+    </video>
+    <video id="2" class="cover hidden" muted playsinline disablepictureinpicture preload>
+        <source src="/modern/NOOK_ALLEY.webm">
+        <source src="/fallback/NOOK_ALLEY.mp4">
+    </video>
+
+    <script src="/stage.js"></script>
+</body>
+
+</html>
