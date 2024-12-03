@@ -163,9 +163,17 @@ body {
     letter-spacing: inherit;
 }
 
+.projectLeft p {
+    line-height: 1;
+    margin-left: 1em;
+    text-indent: 0;
+}
+
 .projectLeft h3 {
     font-weight: inherit;
-    letter-spacing: inhert;
+    line-height: 1;
+    margin-left: 1em;
+    text-indent: 0;
 }
 
 .projectRight {
@@ -429,15 +437,26 @@ button:hover {
         width: 100%;
     }
 
-    .contact button {
-        width: 87%;
+    .minibar {
+        margin-left: 0;
+    }
+
+    .contact input {
+        width: 80%;
         padding: 3%;
         background-color: transparent;
-        color: var(--font-color);
         border: 2px white solid;
-        border-radius: 2px;
-        transition: 0.3s cubic-bezier(0.82, 0.26, 0.93, 1.68);
-        margin-top: 13px;
-        z-index: 2147483649;
+        color: white;
+        margin-left: 0em;
     }
+    
+    .contact textarea {
+        width: 80%;
+        padding: 3%;
+        background-color: transparent;
+        border: 2px white solid;
+        color: white;
+        margin-left: 0em;
+    }
+    
 }
