@@ -1,0 +1,5 @@
+[[headers]]
+  # API Access for the countdown site
+  for = "/check"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
