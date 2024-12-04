@@ -175,7 +175,7 @@
                 <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/home"><div onclick="tab(0)" tabindex="0" id="nav0" role="button" class="navitem active">Home</div></a>
                 <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/projects"><div onclick="tab(1)" tabindex="0" id="nav1" role="button" class="navitem">Projects</div></a>
                 <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/about"><div onclick="tab(2)" tabindex="0" id="nav2" role="button" class="navitem">About</div></a>
-                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/contact"><div onclick="tab(3)" itabindex="0" d="nav3" role="button" class="navitem">Contact</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/contact"><div onclick="tab(3)" itabindex="0" id="nav3" role="button" class="navitem">Contact</div></a>
             </div>
         </div>
     </div>
@@ -213,6 +213,19 @@
             <video src="/videos/home.mp4" loading="lazy" muted playsinline autoplay loop class="homeShowcase" alt="Nook-Alley Intro Loop Video">
         </div>
     </div>
+
+    <!-- Eror Tab -->
+     <div id="error" class="error">
+        <h1><i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Critical error occurred</h1>
+        <h2>A critical error has caused a JS Hang, the error is listed below</h2>
+        <h3 class="errorReport" id="errorReport">Please wait, loading error...</h3>
+        <br>
+        <h4>Step 1: Report error and reload the page</h4>
+        <form action="/index.html" method="POST" name="Error Reports" data-netlify="true">
+            <input class="hidden" aria-hidden="true" id="errorReportF" type="text">
+            <button class="errorReportFormButton" type="submit">Report Error & Reload</button>
+        </form>
+     </div>
 
     <!-- Projects tab-->
     <div id="1" class="projects">

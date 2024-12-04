@@ -80,6 +80,33 @@ body {
     margin-top: 2em;
 }
 
+@keyframes blinker {
+    50% {
+        opacity:0.6;
+    }
+  }
+.error {
+    margin-left: var(--padding);
+    margin-right: 3em;
+    display: none;
+}
+.errorReport {
+    text-indent: 1em;
+    animation: blinker 1.5s infinite;
+    padding: 1em;
+    border-radius: 4em;
+    color: red;
+    background-color: purple;
+}
+.errorReportFormButton {
+    padding: 1.5em;
+    margin-top: -0.5em;
+    width: 30em;
+}
+.hidden {
+    display: none;
+}
+
 .carbontext {
     position: relative;
     display: inline-block;

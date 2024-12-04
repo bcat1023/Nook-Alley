@@ -10,6 +10,7 @@ var mobileTabs = ["block", "block", "block", "block"]
 // mobile
 let dead = false;
 function tab(tabX, resize) {
+    try{
     
     // Recall Flag Detection
     // This is used for updating the format when the screen changes, its for responsive design it
@@ -47,7 +48,7 @@ function tab(tabX, resize) {
     document.getElementById(`nav0`).className = 'navitem';
     document.getElementById(`nav1`).className = 'navitem';
     document.getElementById(`nav2`).className = 'navitem';
-    document.getElementById(`nav3`).className = 'navitem';
+    document.getElementById(`na3`).className = 'navitem';
 
     // This part is more reasonable, prob should rewrite it still?
 
@@ -69,6 +70,13 @@ function tab(tabX, resize) {
             tab(NaN, true)
         });
         console.assert(`Dead trip fired, event listener registered`)
+    }
+
+    } catch (error) {
+        console.error(error)
+        document.getElementById('errorReportF').value = `${error}`;
+        document.getElementById('errorReport').innerHTML = `<i class="fa-solid fa-terminal"></i> ${error}`;
+        document.getElementById('error').style.display = 'block';
     }
 }
 
