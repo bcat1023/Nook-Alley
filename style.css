@@ -140,8 +140,10 @@ body {
 
 .projectShowcase {
     width: 100%;
+    position: sticky;
+    top: 2em;
     transform: scale(0.7);
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 .projects {
@@ -180,7 +182,6 @@ body {
     margin-top: -8%;
     width: 50%;
 }
-
 
 .projectSelector {
     list-style: none;
@@ -233,6 +234,13 @@ body {
 .projectSelectorItem:active {
     background-color: rgb(85, 85, 85);
     color: white;
+}
+
+.award {
+    background-color: rgb(101, 65, 172);
+    padding: 0.2em;
+    border-radius: 3em;
+    display: inline-block;
 }
 
 .about {
@@ -449,7 +457,7 @@ button:hover {
         color: white;
         margin-left: 0em;
     }
-    
+
     .contact textarea {
         width: 80%;
         padding: 3%;
@@ -458,5 +466,5 @@ button:hover {
         color: white;
         margin-left: 0em;
     }
-    
+
 }
