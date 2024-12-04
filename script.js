@@ -108,3 +108,20 @@ if(url.indexOf('#' + 'about') != -1) {
 if(url.indexOf('#' + 'contact') != -1) {
     tab(3)
 }
+
+/*
+
+  ===================================================
+  ||For SEO:                                       ||
+  ||    In oder for proper SEO, links are required ||
+  ||in the navigation buttons, however navigation  ||
+  ||is purely JS powered here, as a result I have  ||
+  ||this code to allow me to use href's but stop   ||
+  ||HTTPS navigation and us JS to switch the tabs  ||
+  ||while keeping good SEO and a proper link index.||
+  ===================================================
+
+*/
+function handleLinkClick(event) {
+    event.preventDefault();
+}

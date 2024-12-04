@@ -172,10 +172,10 @@
         </div>
         <div class="rightnav">
             <div class="itemBar">
-                <div onclick="tab(0)" id="nav0" class="navitem active">Home</div>
-                <div onclick="tab(1)" id="nav1" class="navitem">Projects</div>
-                <div onclick="tab(2)" id="nav2" class="navitem">About</div>
-                <div onclick="tab(3)" id="nav3" class="navitem">Contact</div>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/home"><div onclick="tab(0)" id="nav0" role="button" class="navitem active">Home</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/projects"><div onclick="tab(1)" id="nav1" role="button" class="navitem">Projects</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/about"><div onclick="tab(2)" id="nav2" role="button" class="navitem">About</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/contact"><div onclick="tab(3)" id="nav3" role="button" class="navitem">Contact</div></a>
             </div>
         </div>
     </div>

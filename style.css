@@ -38,6 +38,10 @@ body {
     height: 0rem;
 }
 
+.antiBlueBar:-webkit-any-link{
+    text-decoration: none !important;
+}
+
 .navitem {
     text-align: center;
     margin-top: 0.4rem;
