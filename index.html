@@ -80,7 +80,7 @@
     </div>
     <div class="navbar">
         <div class="leftnav">
-            <a href="/">
+            <a href="/" aria-label="Nook-Alley Logo">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1497.33 317.12">
@@ -172,10 +172,10 @@
         </div>
         <div class="rightnav">
             <div class="itemBar">
-                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/home"><div onclick="tab(0)" id="nav0" role="button" class="navitem active">Home</div></a>
-                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/projects"><div onclick="tab(1)" id="nav1" role="button" class="navitem">Projects</div></a>
-                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/about"><div onclick="tab(2)" id="nav2" role="button" class="navitem">About</div></a>
-                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/contact"><div onclick="tab(3)" id="nav3" role="button" class="navitem">Contact</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/home"><div onclick="tab(0)" tabindex="0" id="nav0" role="button" class="navitem active">Home</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/projects"><div onclick="tab(1)" tabindex="0" id="nav1" role="button" class="navitem">Projects</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/about"><div onclick="tab(2)" tabindex="0" id="nav2" role="button" class="navitem">About</div></a>
+                <a class="antiBlueBar" onclick="handleLinkClick(event)" href="/contact"><div onclick="tab(3)" itabindex="0" d="nav3" role="button" class="navitem">Contact</div></a>
             </div>
         </div>
     </div>
@@ -198,7 +198,7 @@
             <div>
                 <span>
                     <a class="gitRef" href="//github.com/bcat1023">
-                        <p><i class="fa-brands fa-github"></i> Github</p>
+                        <p><i class="fa-brands fa-github" aria-hidden="true"></i> Github</p>
                     </a>
                     <div class="carbontext">Carbon Control monitored by Catchpoint
                         <span class="carbonbadge"><img class="badge"
@@ -233,7 +233,7 @@
                     </li>
                     <br>
                     <li onmouseover="projectShowcase(1)" class="projectSelectorItem">
-                        <h3>Titan Network <span class="award"><i class="fa-regular fa-star"></i> Crowd Favorite</span></h3>
+                        <h3>Titan Network <span class="award"><i class="fa-regular fa-star" aria-hidden="true"></i> Crowd Favorite</span></h3>
                         <p>Titan Network, your center for games since 2019</p>
                         <div id="roller1" class="projectRollup">
                             <div class="projectRollupText">
