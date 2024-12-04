@@ -99,13 +99,13 @@ function projectShowcase(project) {
 //    wil handle it.                            ||
 //================================================
 var url = window.location.href;
-if(url.indexOf('#' + 'projects') != -1) {
+if(url.indexOf('/' + 'projects') != -1) {
     tab(1)
 }
-if(url.indexOf('#' + 'about') != -1) {
+if(url.indexOf('/' + 'about') != -1) {
     tab(2)
 }
-if(url.indexOf('#' + 'contact') != -1) {
+if(url.indexOf('/' + 'contact') != -1) {
     tab(3)
 }
 
