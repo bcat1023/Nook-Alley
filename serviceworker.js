@@ -1,4 +1,5 @@
-  self.addEventListener('install', function (event) {
+// Todo: Consider not caching the mp4 files, or have some check to cache the one the browser needs
+self.addEventListener('install', function (event) {
     event.waitUntil(
       caches.open('Nook-Alley Video Cache').then(function (cache) {
         return cache.addAll([

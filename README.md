@@ -2,6 +2,11 @@
 
 Nook Alley is my latest Personal Project Showcase (PPS). Being a successor to thedrowsy, my old pps, this site has encompassed all of my current projects and has became my new online alias.
 
+## Todo
+1. Update Video Cache Service Worker to only cache the format the browser needs
+2. Update projects to reflect current projects
+3. News/Announcments page (I have an idea for this)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
