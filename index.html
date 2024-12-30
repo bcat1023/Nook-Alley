@@ -233,8 +233,10 @@
             </div>
         </div>
         <div class="homeRight">
-            <video src="/videos/home.mp4" loading="lazy" muted playsinline autoplay loop class="homeShowcase"
-                alt="Nook-Alley Intro Loop Video">
+            <video loading="lazy" muted playsinline autoplay loop class="homeShowcase" alt="Nook-Alley Intro Loop Video">
+                <source src="/videos/webm/home.webm" type="">
+                <source src="/videos/legacy/home.mp4">
+            </video>
         </div>
     </div>
 
@@ -246,44 +248,48 @@
             </div>
             <div>
                 <ul class="projectSelector">
-                    <li onmouseover="projectShowcase(1)" class="projectSelectorItem">
+                    <li onmouseover="projectShowcase(0)" class="projectSelectorItem">
                         <h3>Titan Network <span class="award"><i class="fa-regular fa-star" aria-hidden="true"></i>
                                 Crowd Favorite</span></h3>
                         <p>Titan Network, your center for games since 2019</p>
-                        <div id="roller1" class="projectRollup">
+                        <div id="roller0" class="projectRollup">
                             <div class="projectRollupText">
                                 <h4>WebGL, Flash, Arcade Games. Titan Network has all of the games for you.</h4>
                             </div>
                             <a href="//games.nookalley.com"><button>Launch</button></a>
-                            <a href="//github.com/bcat1023/Titan-Network" target="_blank"><button>Source Code</button></a>
+                            <a href="//github.com/bcat1023/Titan-Network" target="_blank"><button>Source
+                                    Code</button></a>
                         </div>
                     </li>
                     <br>
-                    <!-- Why you ask? idk this one is broken, its weird. -->
-                    <li onmouseover="projectShowcase(0)" class="projectSelectorItem">
+                    <li onmouseover="projectShowcase(1)" class="projectSelectorItem">
                         <h3>The Idea Grails</h3>
                         <p>Vote for which project I should make next.</p>
-                        <div id="roller0" class="projectRollup">
+                        <div id="roller1" class="projectRollup">
                             <div class="projectRollupText">
-                                <h4>Almost every week I come up with ideas, I write them all down. Some get green lit and move forward, most get shelved. Soon, ill launch an app that lets you see my shelf and vote for ideas to be unshelved and reconsidered.</h4>
+                                <h4>Almost every week I come up with ideas, I write them all down. Some get green lit
+                                    and move forward, most get shelved. Soon, ill launch an app that lets you see my
+                                    shelf and vote for ideas to be unshelved and reconsidered.</h4>
                             </div>
                             <a href="//ideagrail.nookalley.com"><button>Launch</button></a>
-                            <a href="//github.com/bcat1023/The-Idea-Grail" target="_blank"><button>Source Code</button></a>
+                            <a href="//github.com/bcat1023/The-Idea-Grail" target="_blank"><button>Source
+                                    Code</button></a>
                         </div>
                     </li>
                     <br>
-                        <li onmouseover="projectShowcase(2)" class="projectSelectorItem">
-                            <h3>Cisco VEN401-AT</h3>
-                            <p>Hacking the VEN401</p>
-                            <div id="roller2" class="projectRollup">
-                                <div class="projectRollupText">
-                                    <h4>Repurposing and hacking the Cisco VEN401-AT/Cisco VEN401-NA.</h4>
-                                    <h5><span class="award">&nbsp;<i class="fa-sharp fa-solid fa-pen-clip"></i> Second Edition coming soon&nbsp;</span></h5>
-                                </div>
-                                <a
-                                    href="https://docs.google.com/document/d/1dYh6EBXbHVa62xbV0kKYK2lhr8NVUnofzA4SeqlNhhw/edit?tab=t.0"><button>Launch</button></a>
+                    <li onmouseover="projectShowcase(2)" class="projectSelectorItem">
+                        <h3>Cisco VEN401-AT</h3>
+                        <p>Hacking the VEN401</p>
+                        <div id="roller2" class="projectRollup">
+                            <div class="projectRollupText">
+                                <h4>Repurposing and hacking the Cisco VEN401-AT/Cisco VEN401-NA.</h4>
+                                <h5><span class="award">&nbsp;<i class="fa-sharp fa-solid fa-pen-clip"></i> Second
+                                        Edition coming soon&nbsp;</span></h5>
                             </div>
-                        </li>
+                            <a
+                                href="https://docs.google.com/document/d/1dYh6EBXbHVa62xbV0kKYK2lhr8NVUnofzA4SeqlNhhw/edit?tab=t.0"><button>Launch</button></a>
+                        </div>
+                    </li>
                     <br>
                     <li onmouseover="projectShowcase(3)" class="projectSelectorItem">
                         <h3>FCC-ID Lookup Tool</h3>
@@ -301,8 +307,10 @@
             </div>
         </div>
         <div class="projectRight">
-            <video autoplay playsinline muted loop src="videos/video0.mp4" class="projectShowcase"
-                id="projectVideo"></video>
+            <video autoplay playsinline muted loop class="projectShowcase" id="projectVideo">
+                <source id="projectVideoSrc0" src="/videos/webm/video0.webm" type="video/webm">
+                <source id="projectVideoSrc1" src="/videos/legacy/video0.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 
@@ -328,7 +336,9 @@
             </div>
         </div>
         <div class="aboutRight">
-            <video src="/videos/home.mp4" loading="lazy" muted playsinline autoplay loop class="projectShowcase" alt="">
+            <video loading="lazy" muted playsinline autoplay loop class="projectShowcase" alt="">
+            <source src="/videos/webm/home.webm" type="video/webm">
+            <source src="/videos/legacy/home.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -345,11 +355,12 @@
             </div>
         </div>
         <div class="contactRight">
-            <form class="contactForm" name="Contact" action="/pages/success.html" netlify-honeypot="bot-field" data-netlify-recaptcha="true" method="POST" netlify>
+            <form class="contactForm" name="Contact" action="/pages/success.html" netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true" method="POST" netlify>
                 <p>Email:</p><input type="email" placeholder="contactme@email.com" name="Email" id="Email">
                 <p>Subject:</p><input type="text" placeholder="Lorem ipsum." name="Subject" id="Subject">
-                <p>Message:</p><textarea name="Message" placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit."
-                    id=""></textarea>
+                <p>Message:</p><textarea name="Message"
+                    placeholder="Lorem ipsum odor amet, consectetuer adipiscing elit." id=""></textarea>
                 <div class="minibar">
                     <button class="special">
                         <div data-netlify-recaptcha="true"></div>
