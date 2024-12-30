@@ -4,16 +4,18 @@ self.addEventListener('install', function (event) {
       caches.open('Nook-Alley Video Cache').then(function (cache) {
         return cache.addAll([
           '/videos/webm/home.webm',
+          '/videos/webm/CiscoVEN401SEPromo.webm',
+          '/videos/webm/FCC-IDPromo.webm',
+          '/videos/webm/TheIdeaGrailsPromo.webm',
+          '/videos/webm/TitanNetworkPromo.webm',
           '/videos/webm/video0.webm',
-          '/videos/webm/video1.webm',
-          '/videos/webm/video2.webm',
-          '/videos/webm/video3.webm',
 
           '/videos/legacy/home.mp4',
-          '/videos/legacy/video0.mp4',
-          '/videos/legacy/video1.mp4',
-          '/videos/legacy/video2.mp4',
-          '/videos/legacy/video3.mp4'
+          '/videos/legacy/CiscoVEN401SEPromo.mp4',
+          '/videos/legacy/FCC-IDPromo.mp4',
+          '/videos/legacy/TheIdeaGrailsPromo.mp4',
+          '/videos/legacy/TitanNetworkPromo.mp4',
+          '/videos/legacy/video0.mp4'
         ]);
       }),
     );
