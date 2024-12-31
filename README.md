@@ -6,6 +6,7 @@ Nook Alley is my latest Personal Project Showcase (PPS). Being a successor to th
 1. Update Video Cache Service Worker to only cache the format the browser needs
 2. Update projects to reflect current projects
 3. News/Announcments page (I have an idea for this)
+4. Clean up tab selection code
 
 ## Contributing
 
