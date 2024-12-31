@@ -17,6 +17,9 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.png" type="image/png" />
 
+    <!-- Video.js CDN -->
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+
     <!-- SEO -->
     <link rel="canonical" href="https://nookalley.com">
 
@@ -318,10 +321,10 @@
     <div id="2" class="about">
         <div class="aboutLeft">
             <div>
-                <h1>Hi there</h1>
+                <h1>Yo</h1>
             </div>
             <div>
-                <p>Hi There! I'm a web developer based in California. I primarily focus on frontend development, though
+                <p>I'm a web developer based in California. I primarily focus on frontend development, though
                     I also dabble in backend development occasionally. Recently, I’ve developed an interest in network
                     engineering and cybersecurity. To deepen my knowledge in these areas, I've started taking courses
                     from Cisco and NYU. I'm always looking for new opportunities to expand my knowledge and develop more
@@ -336,9 +339,9 @@
             </div>
         </div>
         <div class="aboutRight">
-            <video loading="lazy" muted playsinline autoplay loop class="projectShowcase" alt="">
-            <source src="/videos/webm/home.webm" type="video/webm">
-            <source src="/videos/legacy/home.mp4" type="video/mp4">
+            <video loading="lazy" height="432px" muted playsinline autoplay loop class="projectShowcase video-js" preload="auto" data-setup="{}" controls id="aboutMeVideo" alt="About me Video">
+            <source src="/videos/webm/AboutMeVideoPromo.webm" type="video/webm">
+            <source src="/videos/legacy/AboutMeVideoPromo.mp4" type="video/mp4">
             </video>
         </div>
     </div>
@@ -372,6 +375,7 @@
     </div>
 
     <script src="script.js" defer></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 </body>
 
 </html>

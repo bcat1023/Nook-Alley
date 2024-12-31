@@ -289,7 +289,7 @@ body {
 
 .aboutRight {
     width: 50%;
-    margin-top: -5%;
+    margin-top: -12%;
 }
 
 .contact {
@@ -499,4 +499,8 @@ button:hover {
         margin-left: 0em;
     }
 
+}
+ 
+.video-js {
+    background-color: var(--background-color) !important;
 }
