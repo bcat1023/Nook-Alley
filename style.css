@@ -504,3 +504,8 @@ button:hover {
 .video-js {
     background-color: var(--background-color) !important;
 }
+
+.video-js:hover button {
+    box-shadow: 0px 0px 0px 0px transparent !important;
+    transform: translateX(0px)translateY(0px) !important;
+}
