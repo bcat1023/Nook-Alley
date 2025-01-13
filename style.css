@@ -290,6 +290,7 @@ body {
 .aboutRight {
     width: 50%;
     margin-top: -12%;
+    z-index: -9;
 }
 
 .contact {
