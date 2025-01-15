@@ -15,6 +15,7 @@ body {
 .navbar {
     margin-top: 2%;
     display: flex;
+    z-index: 9;
 }
 
 .leftnav {
@@ -30,6 +31,7 @@ body {
     padding-right: var(--padding);
     height: 6rem;
     width: 50%;
+    z-index: inherit;
 }
 
 .itemBar {
@@ -48,6 +50,7 @@ body {
     margin-left: 2em;
     height: 2.2rem;
     color: var(--font-color);
+    z-index: inherit;
 }
 
 .navitem:hover {
@@ -290,7 +293,6 @@ body {
 .aboutRight {
     width: 50%;
     margin-top: -12%;
-    z-index: -9;
 }
 
 .contact {
