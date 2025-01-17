@@ -95,7 +95,7 @@ body {
   height: 100%;
   object-fit: contain; 
   z-index: -9;
-  transform: translate(-50%, -65%)scale(0.99); /* Centers the video */
+  transform: translate(-50%, -65%)scale(0.95); /* Centers the video */
 
   }
   
@@ -226,7 +226,6 @@ body {
 }
 
 .projectRight {
-    position: sticky;
     width: 40%;
 }
 .projectRight .iMac {
@@ -459,6 +458,10 @@ button:hover {
     .projectRight {
         margin-top: 2em;
         width: 100%;
+    }
+    .projectRight .iMac {
+        margin-left: -1em;
+        margin-top: -2em;
     }
 
     .projectSelector {
