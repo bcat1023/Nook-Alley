@@ -18,6 +18,12 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.png" type="image/png" />
 
+    <!-- Critical JS -->
+    <script src="/js/error.js" type="module"></script>
+    <script src="/js/paths.js" type="text/javascript"></script>
+    <script src="/js/navigation.js" type="module"></script>
+
+
     <!-- Video.js CDN -->
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
 
@@ -237,10 +243,13 @@
             </div>
         </div>
         <div class="homeRight">
-            <video loading="lazy" muted playsinline autoplay loop class="homeShowcase" alt="Nook-Alley Intro Loop Video">
-                <source src="/videos/webm/home.webm" type="">
-                <source src="/videos/legacy/home.mp4">
-            </video>
+            <div class="iMac">
+                <video loading="lazy" muted playsinline autoplay loop class="homeShowcase" alt="Nook-Alley Intro Loop Video">
+                    <source src="/videos/webm/TheIdeaGrailsPromo.webm" type="">
+                    <source src="/videos/webm/home.webm" type="">
+                    <source src="/videos/legacy/home.mp4">
+                </video>
+            </div>
         </div>
     </div>
 
@@ -311,10 +320,12 @@
             </div>
         </div>
         <div class="projectRight">
-            <video autoplay playsinline muted loop class="projectShowcase" id="projectVideo">
-                <source id="projectVideoSrc0" src="/videos/webm/video0.webm" type="video/webm">
-                <source id="projectVideoSrc1" src="/videos/legacy/video0.mp4" type="video/mp4">
-            </video>
+            <div class="iMac">
+                <video autoplay playsinline muted loop class="projectShowcase" id="projectVideo">
+                    <source id="projectVideoSrc0" src="/videos/webm/video0.webm" type="video/webm">
+                    <source id="projectVideoSrc1" src="/videos/legacy/video0.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
@@ -380,9 +391,10 @@
             </form>
         </div>
     </div>
-
-    <script src="script.js"></script>
-    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <!-- Non-essential JS scripts -->
+    <script src="/js/projects.js" type="text/javascript" defer></script>
+    <script src="/js/swRegister.js" type="text/javascript"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js" type="text/javascript" defer></script>
 </body>
 
 </html>

@@ -40,7 +40,7 @@ body {
     height: 0rem;
 }
 
-.antiBlueBar:-webkit-any-link{
+.antiBlueBar:-webkit-any-link {
     text-decoration: none !important;
 }
 
@@ -77,22 +77,41 @@ body {
     margin-right: 5%;
 }
 
-.homeShowcase {
-    width: 100%;
-    transform: scale(0.9);
-    margin-top: 2em;
+.iMac {
+    position: relative;
+  width: 100%; /* Make the frame scale with the parent container */
+  aspect-ratio: 119 / 101; /* Maintain a 16:9 aspect ratio (typical for video) */
+  background-image: url('/images/iMac\ 24_\ -\ Silver.png'); /* Your transparent iMac frame image */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
+.iMac video {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  z-index: -9;
+  transform: translate(-50%, -65%)scale(0.99); /* Centers the video */
+
+  }
+  
 
 @keyframes blinker {
     50% {
-        opacity:0.6;
+        opacity: 0.6;
     }
-  }
+}
+
 .error {
     margin-left: var(--padding);
     margin-right: 3em;
     display: none;
 }
+
 .errorReport {
     text-indent: 1em;
     animation: blinker 1.5s infinite;
@@ -101,11 +120,13 @@ body {
     color: red;
     background-color: purple;
 }
+
 .errorReportFormButton {
     padding: 1.5em;
     margin-top: -0.5em;
     width: 30em;
 }
+
 .hidden {
     display: none;
 }
@@ -172,14 +193,6 @@ body {
     margin-top: -8%;
 }
 
-.projectShowcase {
-    width: 100%;
-    position: sticky;
-    top: 2em;
-    transform: scale(0.7);
-    margin-top: 5em;
-}
-
 .projects {
     margin-left: 5em;
     margin-right: 3em;
@@ -213,8 +226,13 @@ body {
 }
 
 .projectRight {
-    margin-top: -8%;
-    width: 50%;
+    position: sticky;
+    width: 40%;
+}
+.projectRight .iMac {
+    margin-left: 5em;
+    position: sticky;
+    top: 2em;
 }
 
 .projectSelector {
@@ -434,12 +452,6 @@ button:hover {
         margin-top: 0em;
     }
 
-    .projectShowcase {
-        width: 100%;
-        transform: scale(1);
-        margin-top: 2em;
-    }
-
     .projectLeft {
         width: 100%;
     }
@@ -447,12 +459,6 @@ button:hover {
     .projectRight {
         margin-top: 2em;
         width: 100%;
-    }
-
-    .projectShowcase {
-        width: 100%;
-        transform: scale(1);
-        margin-top: 2em;
     }
 
     .projectSelector {
@@ -503,7 +509,7 @@ button:hover {
     }
 
 }
- 
+
 .video-js {
     background-color: var(--background-color) !important;
 }
