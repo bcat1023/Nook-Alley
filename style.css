@@ -309,7 +309,10 @@ body {
 
 .aboutRight {
     width: 50%;
-    margin-top: -12%;
+    margin-top: -5%;
+}
+.projectShowcase {
+    width: 100% !important;
 }
 
 .contact {
@@ -327,7 +330,6 @@ body {
 
 .contactRight {
     width: 50%;
-    margin-top: 3%;
 }
 
 .minibar {
