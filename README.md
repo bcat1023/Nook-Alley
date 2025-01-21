@@ -7,6 +7,7 @@ Nook Alley is my latest Personal Project Showcase (PPS). Being a successor to th
 2. News/Announcments page (I have an idea for this)
 3. Clean up tab selection code
 4. Update pathing system to change the canonical URL
+5. Add a NPM script to use ffmpeg to encode the mp4 to webm while building (will save some time since I won't have to re-encode each update, can be tricky when mobile)
 
 ## Contributing
 
