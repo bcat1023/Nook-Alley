@@ -3,7 +3,7 @@
 // Todo: Consider not caching the mp4 files, or have some check to cache the one the browser needs
 self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open('Nook-Alley Cache 1.20').then(function (cache) {
+    caches.open('Nook-Alley Cache 1.20.4:26').then(function (cache) {
       return cache.addAll([
         '/videos/webm/home.webm',
         '/videos/webm/CiscoVEN401SEPromo.webm',
@@ -22,13 +22,15 @@ self.addEventListener('install', function (event) {
         '/js/error.js',
         '/js/navigation.js',
         '/js/paths.js',
+
+        '/images/iMac 24_ - Silver.png'
       ]);
     }),
   );
 });
 
 self.addEventListener('activate', function (event) {
-  var cacheWhitelist = ['Nook-Alley Cache 1.20']; // Add your new cache name here
+  var cacheWhitelist = ['Nook-Alley Cache 1.20.4:26']; // Add your new cache name here
 
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
