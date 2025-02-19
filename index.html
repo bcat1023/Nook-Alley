@@ -4,19 +4,16 @@
 
 <head>
     <title>Nook Alley — Find Projects, Articles, Games & More.</title>
-    <!-- Were in business!  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/app.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://kit.fontawesome.com/f5b6b4399c.js">
     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://nookalley.com/script.js">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/f5b6b4399c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
 
     <!-- Critical JS -->
     <script src="/js/error.js" type="module"></script>
@@ -27,10 +24,10 @@
     <!-- Video.js CDN -->
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
 
-    <!-- SEO -->
+    <!-- SEO Canonical Tag (To be revamped) -->
     <link rel="canonical" href="https://nookalley.com">
 
-    <!-- iOS Tags -->
+    <!-- iOS PWA Icons -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
@@ -43,27 +40,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
 
     <!-- Primary Meta Tags -->
-    <title>Nook Alley — Projects, Articles & More.</title>
-    <meta name="title" content="Nook Alley — Projects, Articles & More." />
+    <meta name="title" content="Nook Alley — Find Projects, Articles, Games & More." />
     <meta name="description"
-        content="Nook Alley, formerly known as thedrowsy.com. Here you can find my projects, games, and articles. Welcome to the new Nook Alley" />
+        content="Nook Alley, formerly thedrowsy.com and home of Titan Network. Here you can find my other projects, games, and articles." />
     <meta http-equiv="Content-Language" content="en-US">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nookalley.netlify.app" />
+    <meta property="og:url" content="https://nookalley.com" />
     <meta property="og:title" content="Nook Alley — Projects, Articles & More." />
     <meta property="og:description"
-        content="Nook Alley, formerly known as thedrowsy.com. Here you can find my projects, games, and articles. Welcome to the new Nook Alley" />
+        content="Nook Alley, formerly thedrowsy.com and home of Titan Network. Here you can find my other projects, games, and articles." />
     <meta property="og:image" content="/images/file.png" />
     <meta property="og:image:alt" content="Nook Alley Logo" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://nookalley.netlify.app" />
+    <meta property="twitter:url" content="https://nookalley.com" />
     <meta property="twitter:title" content="Nook Alley — Projects, Articles & More." />
     <meta property="twitter:description"
-        content="Nook Alley, formerly known as thedrowsy.com. Here you can find my projects, games, and articles. Welcome to the new Nook Alley" />
+        content="Nook Alley, formerly thedrowsy.com and home of Titan Network. Here you can find my other projects, games, and articles." />
     <meta property="twitter:image" content="/images/file.png" />
     <meta name="twitter:image:alt" content="Nook Alley Logo" />
 
@@ -79,14 +75,20 @@
             y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "p8e058758p");
     </script>
+
+    <!-- No Scripting redirect-->
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/noscript.html">
+    </noscript>
+
 </head>
 
 <body>
     <!-- SEO -->
     <div style="display: none;">
         <h1>Nook Alley — Find Projects, Articles, Games & More.</h1>
-        <h2>Nook Alley, formerly known as thedrowsy.com. Here you can find my projects, games, and articles. Welcome to
-            the new Nook Alley</h2>
+        <h2>Nook Alley, formerly thedrowsy.com and home of Titan Network. Here you can find my other projects, games,
+            and articles.</h2>
     </div>
     <div class="navbar">
         <div class="leftnav">
@@ -200,10 +202,10 @@
 
     <!-- Tabs start here-->
 
-    <!-- Eror Tab -->
+    <!-- Error Tab -->
     <div id="error" class="error">
         <h1><i class="fa-sharp fa-solid fa-triangle-exclamation"></i> Critical error occurred</h1>
-        <h2>A critical error has caused a JS Hang, the error is listed below</h2>
+        <h2>A critical error has caused a JS hang, the error is listed below</h2>
         <h3 class="errorReport" id="errorReport">Please wait, loading error...</h3>
         <br>
         <h4>Step 1: Report error and reload the page</h4>
@@ -211,23 +213,18 @@
             <input name="error" class="hidden" aria-hidden="true" id="errorReportF" type="text">
             <button class="errorReportFormButton" type="submit">Report Error & Reload</button>
         </form>
-        <!-- If you ever want to trigger this to test, fun errorHang() in the console-->
     </div>
 
     <!-- Home tab-->
     <div id="0" class="home">
         <div class="homeLeft">
             <div>
-                <noscript>
-                    <meta http-equiv="refresh" content="0; url=/noscript.html">
-                </noscript>
                 <h1>Nook Alley</h1>
                 <h2 style="display: none;" aria-hidden="true"></h2>
                 <h3>Web Dev</h3>
             </div>
             <div>
-                <p>Hi There! I'm a web developer based in California. I primarily focus on frontend development, though
-                    I also dabble in backend development occasionally.</p>
+                <p>Hi, i'm a web developer from California. I dabble in full stack development and love to make things</p>
             </div>
             <div>
                 <span>
@@ -244,8 +241,9 @@
         </div>
         <div class="homeRight">
             <div class="iMac">
-                <video loading="lazy" muted playsinline autoplay loop class="homeShowcase" alt="Nook-Alley Intro Loop Video">
-                    <source src="/videos/webm/home.webm" type="">
+                <video loading="lazy" muted playsinline autoplay loop class="homeShowcase"
+                    alt="Nook-Alley Intro Loop Video">
+                    <source src="/videos/webm/home.webm">
                     <source src="/videos/legacy/home.mp4">
                 </video>
             </div>
@@ -263,10 +261,10 @@
                     <li onmouseover="projectShowcase(0)" class="projectSelectorItem">
                         <h3>Titan Network <span class="award"><i class="fa-regular fa-star" aria-hidden="true"></i>
                                 Crowd Favorite</span></h3>
-                        <p>Titan Network, your center for games since 2019</p>
+                        <p>Titan Network, your site for games since 2019</p>
                         <div id="roller0" class="projectRollup">
                             <div class="projectRollupText">
-                                <h4>WebGL, Flash, Arcade Games. Titan Network has all of the games for you.</h4>
+                                <h4>Find games such as Slope, Papa games, Super Mario-64, Street Fighter and more here on Titan Network.</h4>
                             </div>
                             <a href="//titan.nookalley.com"><button>Launch</button></a>
                             <a href="//github.com/bcat1023/Titan-Network" target="_blank"><button>Source
@@ -279,9 +277,7 @@
                         <p>Vote for which project I should make next.</p>
                         <div id="roller1" class="projectRollup">
                             <div class="projectRollupText">
-                                <h4>Almost every week I come up with ideas, I write them all down. Some get green lit
-                                    and move forward, most get shelved. Soon, ill launch an app that lets you see my
-                                    shelf and vote for ideas to be unshelved and reconsidered.</h4>
+                                <h4>The Idea Grials is where I dump my idea's for projects to be voted on by the community, Help decide what I make next.</h4>
                             </div>
                             <a href="//ideagrail.nookalley.com"><button>Launch</button></a>
                             <a href="//github.com/bcat1023/The-Idea-Grail" target="_blank"><button>Source
@@ -298,8 +294,7 @@
                                 <h5><span class="award">&nbsp;<i class="fa-sharp fa-solid fa-pen-clip"></i> Second
                                         Edition coming soon&nbsp;</span></h5>
                             </div>
-                            <a
-                                href="https://docs.google.com/document/d/1dYh6EBXbHVa62xbV0kKYK2lhr8NVUnofzA4SeqlNhhw/edit?tab=t.0"><button>Launch</button></a>
+                            <a href="https://docs.google.com/document/d/1dYh6EBXbHVa62xbV0kKYK2lhr8NVUnofzA4SeqlNhhw/edit?tab=t.0"><button>Launch</button></a>
                         </div>
                     </li>
                     <br>
@@ -332,7 +327,7 @@
     <div id="2" class="about">
         <div class="aboutLeft">
             <div>
-                <h1>Yo</h1>
+                <h1>Hello</h1>
             </div>
             <div>
                 <p>I'm a web developer based in California. I primarily focus on frontend development, though
@@ -350,15 +345,18 @@
             </div>
         </div>
         <div class="aboutRight">
-            <video loading="lazy" height="432px" muted playsinline class="projectShowcase video-js" preload="auto" data-setup="{}" controls id="aboutMeVideo" alt="About me Video">
-            <source src="/videos/webm/AboutMeVideoPromo.webm" type="video/webm">
-            <source src="/videos/legacy/AboutMeVideoPromo.mp4" type="video/mp4">
+            <video loading="lazy" height="432px" muted playsinline class="projectShowcase video-js" preload="auto"
+                data-setup="{}" controls id="aboutMeVideo" alt="About me Video">
+                <source src="/videos/webm/AboutMeVideoPromo.webm" type="video/webm">
+                <source src="/videos/legacy/AboutMeVideoPromo.mp4" type="video/mp4">
             </video>
             <p>Want to learn how to make a website?</p>
             <ol>
-                <li><a href="https://www.w3schools.com/html/default.asp">W3Schools - HTML Tutorial</a> <- I started here</li>
-                <br>
-                <li><a href="https://www.w3schools.com/where_to_start.asp">W3Schools - How To Become a Web Developer (Complete Beginners Getting Started With Web Development)</a></li>
+                <li><a href="https://www.w3schools.com/html/default.asp">W3Schools - HTML Tutorial</a> <- I started
+                        here</li>
+                        <br>
+                <li><a href="https://www.w3schools.com/where_to_start.asp">W3Schools - How To Become a Web Developer
+                        (Complete Beginners Getting Started With Web Development)</a></li>
             </ol>
         </div>
     </div>
@@ -391,7 +389,7 @@
         </div>
     </div>
     <!-- Non-essential JS scripts -->
-    <script src="/js/projects.js" type="text/javascript" defer></script>
+    <script src="/js/projects.js" type="text/javascript"></script>
     <script src="/js/swRegister.js" type="text/javascript"></script>
     <script src="https://vjs.zencdn.net/8.16.1/video.min.js" type="text/javascript" defer></script>
 </body>

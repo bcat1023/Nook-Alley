@@ -30,7 +30,6 @@ export function tab(tabX, resize) {
         // This checks the windows width to detect which format array to use.
         // x > 864: Use the desktopTabs array, AKA use the desktop format.
         // x < 864: Use the mobileTabs array, AKA use the mobile format.
-        console.log(window.innerWidth)
         if (window.innerWidth > '864') {
             tabDisplay = desktopTabs;
         } else {
