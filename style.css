@@ -81,7 +81,7 @@ body {
     position: relative;
   width: 100%; /* Make the frame scale with the parent container */
   aspect-ratio: 119 / 101; /* Maintain a 16:9 aspect ratio (typical for video) */
-  background-image: url('/images/iMac\ 24_\ -\ Silver.png'); /* Your transparent iMac frame image */
+  background-image: url('/images/iMac_Bezel_Resized.png'); /* Your transparent iMac frame image */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
