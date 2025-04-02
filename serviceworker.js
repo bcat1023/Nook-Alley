@@ -31,7 +31,7 @@ self.addEventListener('install', function (event) {
 });
 
 self.addEventListener('activate', function (event) {
-  var cacheWhitelist = ['Nook-Alley Cache 1.20.7']; // Add your new cache name here
+  var cacheWhitelist = ['Nook-Alley Cache 1.20.8']; // Add your new cache name here
 
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
