@@ -1,6 +1,6 @@
 var currentProject;
 function projectShowcase(project) {
-    var source = ['TitanNetworkPromo', 'TheIdeaGrailsPromo', "CiscoVEN401SEPromo", "FCC-IDPromo"]
+    var source = ['TitanNetworkPromo', 'QRMachinePromo', 'TheIdeaGrailsPromo', "CiscoVEN401SEPromo", "FCC-IDPromo"]
     // Source Array | Project > PromoFile
 
     tv = document.getElementById('projectVideo') // Root <video> player

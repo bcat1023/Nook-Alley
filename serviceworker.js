@@ -9,6 +9,7 @@ self.addEventListener('install', function (event) {
         '/videos/webm/CiscoVEN401SEPromo.webm',
         '/videos/webm/FCC-IDPromo.webm',
         '/videos/webm/TheIdeaGrailsPromo.webm',
+        '/videos/webm/QRMachinePromo.webm',
         '/videos/webm/TitanNetworkPromo.webm',
         '/videos/webm/video0.webm',
 
@@ -30,7 +31,7 @@ self.addEventListener('install', function (event) {
 });
 
 self.addEventListener('activate', function (event) {
-  var cacheWhitelist = ['Nook-Alley Cache 1.20.6']; // Add your new cache name here
+  var cacheWhitelist = ['Nook-Alley Cache 1.20.7']; // Add your new cache name here
 
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
